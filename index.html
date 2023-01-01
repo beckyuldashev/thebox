@@ -7,6 +7,8 @@
   <title>The Box</title>
 
   <link rel="stylesheet" href="assets/css/style.css">
+  
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
   <div class="main-grid">
@@ -14,7 +16,7 @@
       <img src="assets/img/TB.svg" alt="The Box" class="logo">
 
       <nav class="nav">
-        <ul class="nav__list">
+        <ul class="nav__list" id="primary-navigation">
           <li class="nav__item">
             <a href="#" class="nav__link">Contact</a>
           </li>
@@ -29,6 +31,17 @@
           </li>
         </ul>
       </nav>
+
+      <button class="menu-btn" aria-controls="primary-navigation" aria-expanded="false">
+        <svg fill="var(--clr-accent)" class="hamburger" viewBox="0 0 30 30" width="30">
+          <rect class="line top" width="20" height="3" x="5" y="10" rx="2">
+          </rect>
+          <rect class="line middle" width="20" height="3" x="5" y="15" rx="2">
+          </rect>
+          <rect class="line bottom" width="20" height="3" x="5" y="20" rx="2">
+          </rect>
+        </svg>
+      </button>
     </header>
 
     <main>
