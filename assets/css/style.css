@@ -265,6 +265,17 @@ footer {
     margin-bottom: 0;
   }
 
+  .description::after {
+    content: '01';
+    position: absolute;
+    font-size: 50vw;
+    top: 0;
+    left: -5rem;
+    opacity: .03;
+    z-index: -100;
+    line-height: 1;
+  }
+
   .primary-img {
     grid-column: 2 / -1;
     grid-row: 1 / span 4;
